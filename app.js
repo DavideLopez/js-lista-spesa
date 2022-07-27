@@ -6,7 +6,7 @@ const listEl = document.getElementById('list')
 
 listEl.innerHTML = ''
 
-const listaSpesa = ['guanciale', 'uova x6', 'pecorino', 'bucatini', 'passata pomodoro',]
+const listaSpesa = ['guanciale','uova x6','pecorino','bucatini','passata pomodoro',]
 
 let i = 0
 while (i < listaSpesa.length) {
@@ -14,3 +14,6 @@ while (i < listaSpesa.length) {
     listEl.innerHTML = `<li>${listItem}</li>`
     i++
 }
+
+console.log(listaSpesa)
+console.log(listEl)
