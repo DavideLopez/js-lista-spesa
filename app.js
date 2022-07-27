@@ -6,7 +6,7 @@ const listEl = document.getElementById('list')
 
 listEl.innerHTML = ''
 
-const listaSpesa = ['guanciale','pecorino','bucatini','passata pomodoro',]
+const listaSpesa = ['guanciale','pecorino romano','bucatini','passata pomodoro',]
 
 let i = 0
 while (i < listaSpesa.length) {
@@ -22,8 +22,13 @@ console.log(listEl)
 
 //FOR
 
-const listforEl = document.getElementById('list2')
+const list2El = document.getElementById('list2')
 
-listEl.innerHTML = '';
+list2El.innerHTML = '';
 
-const listaSpesa2 = ['guanciale', 'uovax6', 'rigatoni', 'pepe', ]
+const listaSpesa2 = ['guanciale', 'pecorino romano', 'uovax6', 'spaghetti', 'pepe nero', ]
+
+for (let i = 0; i < listaSpesa2.length; i++ ) {
+    const listItem2 = listaSpesa2[i]
+    list2El.innerHTML += `<li>${listItem2}</li>`
+}
