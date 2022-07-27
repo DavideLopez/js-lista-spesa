@@ -1,4 +1,4 @@
-console.log('spesa')
+// console.log('spesa')
 
 //WHILE
 
@@ -10,12 +10,13 @@ const listaSpesa = ['guanciale','pecorino','bucatini','passata pomodoro',]
 
 let i = 0
 while (i < listaSpesa.length) {
-    const listItem = listaSpesa
-    listEl.innerHTML = `<li>${listItem}</li>`
+    const listItem = listaSpesa[i]
+    console.log(listItem)
+    listEl.innerHTML += `<li>${listItem}</li>`
     i++
 }
 
-console.log(listaSpesa)
+
 console.log(listEl)
 
 
@@ -24,3 +25,5 @@ console.log(listEl)
 const listforEl = document.getElementById('list2')
 
 listEl.innerHTML = '';
+
+const listaSpesa2 = ['guanciale', 'uovax6', 'rigatoni', 'pepe', ]
